@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <title>Elvis Gannem</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="header__content">
+
+            <img src="" alt="">
+            <h1>ELVIS GANNEM</h1>
+            <hr></hr>
+            <h2>Desenvolvedor Front-End</h2>
+
+        </div>
+
+    </header>
+
+    <nav class="nav">
+
+        <ul>
+
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#skills"><li>Habilidades</li></a>
+            <a href="#contact"><li>Contato</li></a>
+            
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="portfolio">
+
+            <h2>PORTFOLIO</h2>
+            <hr class="blueHr">
+            <div id="recentWorks">
+
+                <a href="https://elvisgannem.github.io/crowdfunding-landing/" target="__blank">
+                    <div id="one" class="project">
+                    
+                    </div>
+                </a>
+
+                <a href="https://rhinogluteos.com/" target="__blank">
+
+                    <div id="two" class="project">
+ 
+                    </div>
+                </a>
+
+                <a href="https://timeforargentina.com/novoSite/" target="__blank">
+
+                    <div id="three" class="project">
+  
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="recentWorks">
+
+                <a href="https://elvisgannem.github.io/ping-landing-page/" target="__blank">
+
+                    <div id="four" class="project">
+           
+                    </div>
+                </a>
+
+                <a href="https://elvisgannem.github.io/to-do-app/index.html" target="__blank">
+
+                    <div id="five" class="project">
+ 
+                    </div>
+                </a>
+
+                <a href="https://freelancercalc.netlify.app/" target="__blank">
+
+                    <div id="six" class="project">
+
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="skills">
+
+            <h2>HABILIDADES</h2>
+            <hr>
+            <div id="skillsGrid">
+                
+                <div class="row">
+                    <div id="html">
+                        <i class="fab fa-html5"></i>
+                    </div>
+    
+                    <div id="css">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+    
+                    <div id="js">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    
+                    <div id="react">
+                        <i class="fab fa-react"></i>
+                    </div>
+                </div>              
+
+                <div class="row rowTwo">
+
+                    <div id="bootstrap">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+
+                    <div id="sass">
+                        <i class="fab fa-sass"></i>
+                    </div>
+
+                    <div id="git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                </div>             
+
+            </div>
+        </section>
+
+        <section id="contact">
+
+            <h2>CONTATO</h2>
+            <hr id="hrSeparator">
+
+            <!-- <form action="">
+
+                <input type="text" placeholder="Nome">
+                <hr class="hrForm">
+                <input type="email" placeholder="E-mail">
+                <hr class="hrForm">
+                <textarea placeholder="Mensagem"></textarea>
+                <hr class="hrForm">
+
+                <input type="submit" value="Enviar" id="submit">
+
+            </form> -->
+
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+
+                <input type="text" name="subject" placeholder="Assunto" />
+                <hr class="hrForm">
+                <input type="email" name="subject" placeholder="E-mail" />
+                <hr class="hrForm">
+                <textarea name="text" placeholder="Mensagem"></textarea>
+                <hr class="hrForm">
+                <input type="hidden" name="access_token" value="nb64tpmpgtmofbmtyoxbqmxo" />
+                  <!-- return urls can be fully qualified -OR-
+                     start with / for root relative -OR-
+                     start with . for url relative --> 
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+               
+               
+                <input id="submit_form" class="submit" type="submit" value="Enviar" />
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div id="social-media">
+
+            <a href="https://github.com/elvisgannem" target="__blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/elvis-gannem-45a3b1142/" target="__blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/elvisgannem/?hl=es" target="__blank"><i class="fab fa-instagram"></i></a>
+            
+        </div>
+
+    </footer>
+
+
+    <script>
+        var submitButton = document.getElementById("submit_form");
+        var form = document.getElementById("email_form");
+        form.addEventListener("submit", function (e) {
+            setTimeout(function() {
+                submitButton.value = "Enviando...";
+                submitButton.disabled = true;
+            }, 1);
+        });
+    </script> 
+    
+
+</body>
+
+<script src="https://kit.fontawesome.com/be5a9998b5.js" crossorigin="anonymous"></script>
+<script src="./scripts/scrolling.js"></script>
+</html>
