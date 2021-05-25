@@ -200,11 +200,11 @@ a:visited {
 #skills .rowTwo {
   padding-bottom: 2rem;
 }
-#skills .rowTwo #bootstrap i {
+#skills .rowTwo #wordpress i {
   transition: 0.5s;
 }
-#skills .rowTwo #bootstrap i:hover {
-  color: #563d7c;
+#skills .rowTwo #wordpress i:hover {
+  color: #444140;
 }
 #skills .rowTwo #sass i {
   transition: 0.5s;
