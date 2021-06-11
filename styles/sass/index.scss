@@ -15,6 +15,7 @@ $fourth_color: #fbe0c4;
 body {
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 }
 
 a {
