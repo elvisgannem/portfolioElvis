@@ -123,7 +123,7 @@ a:visited {
   background-image: url("../../images/projects/project4.png");
 }
 #portfolio div #five {
-  background-image: url("../../images/projects/project5.png");
+  background-image: url("../../images/projects/project7.png");
 }
 #portfolio div #six {
   background-image: url("../../images/projects/project6.png");
@@ -154,12 +154,16 @@ a:visited {
   background: #0061a8;
   margin-top: 2rem;
 }
-#skills div {
+#skills .containerGrid {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 5%;
   justify-content: center;
-  padding: 2rem 0;
+}
+#skills .gridOfSkills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  gap: 45px;
+  padding-bottom: 1rem;
 }
 #skills i {
   font-size: 4rem;
@@ -238,6 +242,14 @@ a:visited {
 }
 #git:hover {
   color: #f34f29;
+  transform: scale(1.1);
+}
+
+#vue {
+  transition: 0.5s;
+}
+#vue:hover {
+  color: #42b883;
   transform: scale(1.1);
 }
 
