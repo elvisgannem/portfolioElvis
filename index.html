@@ -7,18 +7,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/css/index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Elvis Gannem</title>
 </head>
 <body>
     
     <header class="header">
 
-        <div class="header__content">
+        <div class="header__content animate__animated animate__fadeIn">
 
             <img src="" alt="">
-            <h1>ELVIS GANNEM</h1>
+            <h1 class="animate__animated animate__fadeInDown">ELVIS GANNEM</h1>
             <hr></hr>
-            <h2>Desenvolvedor Front-End</h2>
+            <h2 class="animate__animated animate__fadeInDown">Desenvolvedor Front-End</h2>
 
         </div>
 
@@ -39,9 +43,9 @@
 
         <section id="portfolio">
 
-            <h2>PROJETOS</h2>
+            <h2 class="animate__animated animate__fadeInDown">PROJETOS</h2>
             <hr class="blueHr">
-            <div id="recentWorks">
+            <div id="recentWorks" class="animate__animated animate__fadeInLeft">
 
                 <a href="https://elvisgannem.github.io/crowdfunding-landing/" target="__blank">
                     <div id="one" class="project">
@@ -65,7 +69,7 @@
 
             </div>
 
-            <div id="recentWorks">
+            <div id="recentWorks" class="animate__animated animate__fadeInRight">
 
                 <a href="https://weather-app-r.netlify.app/" target="__blank">
 
@@ -94,11 +98,11 @@
 
         <section id="skills">
 
-            <h2>HABILIDADES</h2>
+            <h2 class="animate__animated animate__fadeInDown">HABILIDADES</h2>
             <hr>
 
            <div class="containerGrid">
-                <div class="gridOfSkills">
+                <div class="gridOfSkills animate__animated animate__fadeIn">
                 <i class="fab fa-html5" id="html">
                 </i>
                 <i class="fab fa-css3-alt" id="css"></i>
@@ -113,55 +117,12 @@
 
             </div>
            </div>
-            <!-- <div id="skillsGrid">
-                
-                <div class="row">
-                    <div id="html">
-                        <i class="fab fa-html5"></i>
-                    </div>
-    
-                    <div id="css">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-    
-                    <div id="js">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    
-                    <div id="react">
-                        <i class="fab fa-react"></i>
-                    </div>
-
-                    
-                    
-                </div>              
-
-                <div class="row rowTwo">
-
-                    <!-- <div id="bootstrap">
-                        <i class="fab fa-bootstrap"></i>
-                    </div> -->
-
-                    <!-- <div id="wordpress">
-                        <i class="fab fa-wordpress"></i>
-                    </div>
-
-                    <div id="sass">
-                        <i class="fab fa-sass"></i>
-                    </div>
-
-                    <div id="git">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-
-                </div>             
-
-            </div>  -->
+            
         </section>
 
         <section id="contact">
 
-            <h2>CONTATO</h2>
+            <h2 class="animate__animated animate__fadeInDown">CONTATO</h2>
             <hr id="hrSeparator">
 
             <!-- <form action="">
@@ -177,7 +138,7 @@
 
             </form> -->
 
-            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form" class="animate__animated animate__fadeIn">
 
                 <input type="text" name="subject" placeholder="Assunto" />
                 <hr class="hrForm">
