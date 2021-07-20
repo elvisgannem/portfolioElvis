@@ -337,6 +337,15 @@ a:visited {
         transform: scale(1.1);
       }
     }
+
+    #node {
+      transition: 0.5s;
+
+      &:hover {
+        color: #68a063;
+        transform: scale(1.1);
+      }
+    }
     
   
 

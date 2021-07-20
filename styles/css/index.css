@@ -253,6 +253,14 @@ a:visited {
   transform: scale(1.1);
 }
 
+#node {
+  transition: 0.5s;
+}
+#node:hover {
+  color: #68a063;
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 800px) {
   #skills div {
     column-gap: 10%;
