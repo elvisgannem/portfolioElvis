@@ -9,7 +9,7 @@ $fourth_color: #fbe0c4;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -30,7 +30,7 @@ a:visited {
 // HEADER STYLES -- HERO
 
 .header {
-  background-image: url("../../images/header-bg.jpg");
+  background-image: url('../../images/header-bg.jpg');
   padding: 4rem;
   color: white;
   display: flex;
@@ -136,7 +136,7 @@ a:visited {
       &:hover {
         // filter: brightness(50%);
         filter: brightness(70%);
-        transform: scale(.9);
+        transform: scale(0.9);
       }
 
       p {
@@ -148,27 +148,27 @@ a:visited {
     }
 
     #one {
-      background-image: url("../../images/projects/project8.png");
+      background-image: url('../../images/projects/project8.png');
     }
 
     #two {
-      background-image: url("../../images/projects/project2.png");
+      background-image: url('../../images/projects/project2.png');
     }
 
     #three {
-      background-image: url("../../images/projects/project3.png");
+      background-image: url('../../images/projects/project3.png');
     }
 
     #four {
-      background-image: url("../../images/projects/project4.png");
+      background-image: url('../../images/projects/project4.png');
     }
 
     #five {
-      background-image: url("../../images/projects/project7.png");
+      background-image: url('../../images/projects/project7.png');
     }
 
     #six {
-      background-image: url("../../images/projects/project6.png");
+      background-image: url('../../images/projects/project6.png');
     }
 
     @media screen and (max-width: 820px) {
@@ -192,10 +192,10 @@ a:visited {
     }
   }
 }
-@media screen and (min-width: 720px){
-.projects {
-  margin: 0;
-}
+@media screen and (min-width: 720px) {
+  .projects {
+    margin: 0;
+  }
 }
 
 // SKILLS SECTION
@@ -204,7 +204,7 @@ a:visited {
   background: $primary_color;
   margin-top: 2rem;
 
-  .containerGrid{
+  .containerGrid {
     display: flex;
     justify-content: center;
   }
@@ -252,106 +252,97 @@ a:visited {
   //     margin: 0 4rem;
   //   }
 
-    #html {
-        transition: 0.5s;
-        &:hover {
-          color: #f06529;
-          transform: scale(1.1);
-        }
-      }
-    
-
-    #css {
-        transition: 0.5s;
-        &:hover {
-          color: #2965f1;
-          transform: scale(1.1);
-        }
-      }
-  
-
-    #js {
-        transition: 0.5s;
-        &:hover {
-          color: #f0db4f;
-          transform: scale(1.1);
-        }
-      }
-    
-
-    #react {
-        transition: 0.5s;
-        &:hover {
-          color: #61dbfb;
-          transform: scale(1.1);
-        }
-      }
+  #html {
+    transition: 0.5s;
+    &:hover {
+      color: #f06529;
+      transform: scale(1.1);
     }
-  
+  }
 
-  // .rowTwo {
-  //   padding-bottom: 2rem;
-
-    #bootstrap {
-        transition: 0.5s;
-
-        &:hover {
-          color: #563d7c;
-          transform: scale(1.1);
-        }
-      }
-
-    #wordpress {
-        transition: 0.5s;
-
-        &:hover {
-          color: #444140;
-          transform: scale(1.1);
-        }
-      }
-    
-    #sass {
-        transition: 0.5s;
-
-        &:hover {
-          color: #cc6699;
-          transform: scale(1.1);
-        }
-      }
-    
-
-    #git {
-        transition: 0.5s;
-
-        &:hover {
-          color: #f34f29;
-          transform: scale(1.1);
-        }
-      }
-
-    #vue {
-      transition: 0.5s;
-
-      &:hover {
-        color: #42b883;
-        transform: scale(1.1);
-      }
+  #css {
+    transition: 0.5s;
+    &:hover {
+      color: #2965f1;
+      transform: scale(1.1);
     }
+  }
 
-    #node {
-      transition: 0.5s;
-
-      &:hover {
-        color: #68a063;
-        transform: scale(1.1);
-      }
+  #js {
+    transition: 0.5s;
+    &:hover {
+      color: #f0db4f;
+      transform: scale(1.1);
     }
-    
-  
+  }
 
+  #react {
+    transition: 0.5s;
+    &:hover {
+      color: #61dbfb;
+      transform: scale(1.1);
+    }
+  }
+}
 
+// .rowTwo {
+//   padding-bottom: 2rem;
 
-@media only screen and (max-width: 800px){
+#bootstrap {
+  transition: 0.5s;
+
+  &:hover {
+    color: #563d7c;
+    transform: scale(1.1);
+  }
+}
+
+#wordpress {
+  transition: 0.5s;
+
+  &:hover {
+    color: #444140;
+    transform: scale(1.1);
+  }
+}
+
+#sass {
+  transition: 0.5s;
+
+  &:hover {
+    color: #cc6699;
+    transform: scale(1.1);
+  }
+}
+
+#git {
+  transition: 0.5s;
+
+  &:hover {
+    color: #f34f29;
+    transform: scale(1.1);
+  }
+}
+
+#vue {
+  transition: 0.5s;
+
+  &:hover {
+    color: #42b883;
+    transform: scale(1.1);
+  }
+}
+
+#php {
+  transition: 0.5s;
+
+  &:hover {
+    color: #b0b3d6;
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 800px) {
   #skills {
     div {
       column-gap: 10%;
@@ -359,7 +350,7 @@ a:visited {
   }
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   #skills {
     div {
       column-gap: 15%;
@@ -367,14 +358,13 @@ a:visited {
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   #skills {
     div {
       column-gap: 20%;
     }
   }
 }
-
 
 // CONTACT SECTION
 

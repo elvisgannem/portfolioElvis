@@ -253,11 +253,11 @@ a:visited {
   transform: scale(1.1);
 }
 
-#node {
+#php {
   transition: 0.5s;
 }
-#node:hover {
-  color: #68a063;
+#php:hover {
+  color: #b0b3d6;
   transform: scale(1.1);
 }
 
