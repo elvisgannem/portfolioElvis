@@ -29,13 +29,24 @@
     </header>
 
     <nav class="nav">
+        <div>
+            <a href="./docs/cv.pdf" target="__blank">
+                <button>
+                    <i class="fab fa-solid fa-arrow-down"></i>
+                    Baixar currículo
+                </button>
+            </a>
+            <!-- <button id="languages-button">
+                <i class="fa-solid fa-language"></i>
+            </button>
+            <div class="languages-div">
+            </div> -->
+        </div>
 
         <ul>
-
             <a href="#portfolio"><li>Projetos</li></a>
             <a href="#skills"><li>Habilidades</li></a>
             <a href="#contact"><li>Contato</li></a>
-            
         </ul>
     </nav>
 
@@ -103,19 +114,17 @@
 
            <div class="containerGrid">
                 <div class="gridOfSkills animate__animated animate__fadeIn">
-                <i class="fab fa-html5" id="html">
-                </i>
-                <i class="fab fa-css3-alt" id="css"></i>
-                <i class="fab fa-js-square" id="js"></i>
-                <i class="fab fa-react" id="react"></i>
-                <i class="fab fa-vuejs" id="vue"></i>
-                <i class="fab fa-php" id="php"></i>
-                <i class="fab fa-bootstrap" id="bootstrap"></i>
-                <i class="fab fa-wordpress" id="wordpress"></i>
-                <i class="fab fa-sass" id="sass"></i>
-                <i class="fab fa-git-alt" id="git"></i>
-                
-
+                <i class="fab fa-html5 tooltip" id="html" data="HTML"></i>
+                <i class="fab fa-css3-alt tooltip" id="css" data="CSS"></i>
+                <i class="fab fa-js-square tooltip" id="js" data="JavaScript"></i>
+                <i class="fab fa-react tooltip" id="react" data="React, Context API, Redux"></i>
+                <i class="fab fa-vuejs tooltip" id="vue" data="Vue, Vuex"></i>
+                <i class="fab fa-php tooltip" id="php" data="PHP"></i>
+                <!-- <i class="fab fa-brands fa-docker tooltip" id="docker" data="Docker"></i> -->
+                <i class="fab fa-git-alt tooltip" id="git" data="Git"></i>
+                <i class="fab fa-sass tooltip" id="sass" data="SASS"></i>
+                <i class="fab fa-bootstrap tooltip" id="bootstrap" data="Bootstrap"></i>
+                <i class="fab fa-wordpress tooltip" id="wordpress" data="WordPress"></i>
             </div>
            </div>
             
@@ -126,19 +135,6 @@
             <h2 class="animate__animated animate__fadeInDown">CONTATO</h2>
             <hr id="hrSeparator">
 
-            <!-- <form action="">
-
-                <input type="text" placeholder="Nome">
-                <hr class="hrForm">
-                <input type="email" placeholder="E-mail">
-                <hr class="hrForm">
-                <textarea placeholder="Mensagem"></textarea>
-                <hr class="hrForm">
-
-                <input type="submit" value="Enviar" id="submit">
-
-            </form> -->
-
             <form action="https://postmail.invotes.com/send" method="post" id="email_form" class="animate__animated animate__fadeIn">
 
                 <input type="text" name="subject" placeholder="Assunto" />
@@ -148,9 +144,6 @@
                 <textarea name="text" placeholder="Mensagem"></textarea>
                 <hr class="hrForm">
                 <input type="hidden" name="access_token" value="nb64tpmpgtmofbmtyoxbqmxo" />
-                  <!-- return urls can be fully qualified -OR-
-                     start with / for root relative -OR-
-                     start with . for url relative --> 
                 <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
                 <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                
@@ -163,15 +156,12 @@
     </main>
 
     <footer class="footer">
-
         <div id="social-media">
-
             <a href="https://github.com/elvisgannem" target="__blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/elvis-gannem-45a3b1142/" target="__blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.instagram.com/elvisgannem/?hl=es" target="__blank"><i class="fab fa-instagram"></i></a>
-            
+            <a href="https://api.whatsapp.com/send?phone=5566996853642&text=Oi%20Elvis!" target="__blank"><i class="fab fa-brands fa-whatsapp"></i></a>
         </div>
-
     </footer>
 
 
@@ -190,5 +180,9 @@
 </body>
 
 <script src="https://kit.fontawesome.com/be5a9998b5.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 <script src="./scripts/scrolling.js"></script>
+<script src="./scripts/tooltip.js"></script>
+<script src="./scripts/language.js"></script>
 </html>
