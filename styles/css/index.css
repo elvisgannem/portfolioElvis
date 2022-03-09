@@ -62,6 +62,45 @@ a:visited {
   background: #0061a8;
   box-shadow: 1px 1px 10px #444444;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav div {
+  margin-left: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav div .languages-div {
+  display: none;
+}
+.nav div .language {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.nav div button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  background-color: #4992CA;
+  border: 1px solid #4992CA;
+  color: #FFF;
+  cursor: pointer;
+}
+.nav div button i {
+  font-size: 1.1rem;
+}
+.nav div button:hover {
+  transition: 0.4s;
+  background-color: #0061a8;
+  border: 1px solid #4992CA;
 }
 .nav ul {
   display: flex;
@@ -71,6 +110,12 @@ a:visited {
   list-style: none;
   padding: 0.8rem 1.5rem;
   font-size: 0.9rem;
+}
+
+#language-switcher {
+  position: absolute;
+  background: red;
+  top: 100px;
 }
 
 #portfolio {
@@ -261,6 +306,14 @@ a:visited {
   transform: scale(1.1);
 }
 
+#docker {
+  transition: 0.5s;
+}
+#docker:hover {
+  color: #0db7ed;
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 800px) {
   #skills div {
     column-gap: 10%;
@@ -270,10 +323,33 @@ a:visited {
   #skills div {
     column-gap: 15%;
   }
+
+  #skills .gridOfSkills {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
+  #skills .gridOfSkills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nav {
+    justify-content: center;
+  }
+  .nav div {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 420px) {
   #skills div {
     column-gap: 20%;
+  }
+  #skills .gridOfSkills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #portfolio div div {
+    width: 250px;
   }
 }
 #contact #hrSeparator {
@@ -340,6 +416,11 @@ footer div i {
 }
 footer div i:hover {
   color: #8ab6d6;
+}
+
+#tooltip {
+  position: absolute;
+  background: red;
 }
 
 /*# sourceMappingURL=index.css.map */
