@@ -314,6 +314,14 @@ a:visited {
   transform: scale(1.1);
 }
 
+#laravel {
+  transition: 0.5s;
+}
+#laravel:hover {
+  color: #fb503b;
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 800px) {
   #skills div {
     column-gap: 10%;
