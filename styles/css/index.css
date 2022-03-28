@@ -322,6 +322,14 @@ a:visited {
   transform: scale(1.1);
 }
 
+#databases {
+  transition: 0.5s;
+}
+#databases:hover {
+  color: #afafaf;
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 800px) {
   #skills div {
     column-gap: 10%;
@@ -429,6 +437,40 @@ footer div i:hover {
 #tooltip {
   position: absolute;
   background: red;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 0.8rem;
+  background: #2978b5;
+  padding: 1rem;
+  color: #FFF;
+  border-radius: 0.8rem;
+  gap: 0.6rem;
+  z-index: 1500;
+  max-width: 300px;
+}
+.personal-info button {
+  outline: none;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  background: #0061a8;
+  border: 1px solid #2978b5;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.personal-info button:hover {
+  background: transparent;
+  border: 1px solid #8ab6d6;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
