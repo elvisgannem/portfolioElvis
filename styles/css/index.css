@@ -330,6 +330,14 @@ a:visited {
   transform: scale(1.1);
 }
 
+#linux {
+  transition: 0.5s;
+}
+#linux:hover {
+  color: #333333;
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 800px) {
   #skills div {
     column-gap: 10%;
